@@ -1,13 +1,17 @@
-﻿namespace AspNetCoreMvc.Controllers;
+﻿using Microsoft.AspNetCore.Mvc;
 
-public class HomeController
+namespace AspNetCoreMvc.Controllers;
+
+public class HomeController : Controller
 {
     // "/"
     // "/Home"
     // "/Home/Index"
-    public string Index()
+    public IActionResult Index()
     {
-        return "Home page";
+        //return Json("Home page");
+        //return Content("Home page");
+        return Content("<h1>Home page</h1>", "text/html");
     }
 
     // "/Home/Bio"
