@@ -9,4 +9,10 @@ public class HomeController
     {
         return "Home page";
     }
+
+    // "/Home/Bio"
+    public string Bio()
+    {
+        return "Web Developer";
+    }
 }
