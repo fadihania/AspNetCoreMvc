@@ -7,6 +7,8 @@ var app = builder.Build();
 
 // Middlewares
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
 // Default routing: /controller/action/id?
 // Default route: /Home/Index
 // Attribute routing
