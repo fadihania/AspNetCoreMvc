@@ -4,12 +4,12 @@ namespace AspNetCoreMvc.Controllers;
 
 [Route("About")]
 [Route("AboutUs")]
-public class AboutController
+public class AboutController : Controller
 {
     [Route("")]
     [Route("Contact")]
-    public string Contact()
+    public IActionResult Contact()
     {
-        return "This a contact page";
+        return View();
     }
 }
